@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { UserService } from 'src/app/core/services/user.service';
+import { UserService } from 'src/core/services/user.service';
 import { IUser } from 'src/shared/models/user.model';
 
 @Component({

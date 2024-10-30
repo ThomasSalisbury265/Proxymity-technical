@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, catchError, map, of, tap, throwError } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { IUser } from 'src/shared/models/user.model';
 
 @Injectable({
@@ -9,7 +10,7 @@ import { IUser } from 'src/shared/models/user.model';
 export class UserService {
   private usersSubject: BehaviorSubject<Array<IUser>> = new BehaviorSubject<Array<IUser>>([]);
   public users$: Observable<Array<IUser>> = this.usersSubject.asObservable();
-  private usersUrl = 'https://jsonplaceholder.typicode.com/users';
+  private usersUrl = `${environment.jsonPlaceholderUrl}/users`;
 
   constructor(private http: HttpClient) { }
 
