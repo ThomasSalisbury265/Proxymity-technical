@@ -4,32 +4,32 @@
   margin: 8px;
   border-radius: 8px;
   width: 600px;
-}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-}
+  .header {
+    display: flex;
+    justify-content: space-between;
 
-.user-card h2 {
-  margin-top: 0;
-}
+    h2 {
+      margin-top: 0;
+    }
+  }
 
-.user-card p {
-  margin: 4px 0;
-}
+  p {
+    margin: 4px 0;
+  }
 
-.actions {
-  margin-top: 12px;
-}
+  .actions {
+    margin-top: 12px;
 
-.actions button {
-  margin-right: 8px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
+    button {
+      margin-right: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
 
-.actions button:hover {
-  background-color: #007bff;
-  color: #fff;
+      &:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+  }
 }
