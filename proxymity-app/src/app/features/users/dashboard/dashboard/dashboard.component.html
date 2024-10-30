@@ -1,0 +1,8 @@
+
+<div class="header"><button (click)="addUser()">add user</button> <h3>Customer Dashboard</h3></div>
+<div class="user-card">
+  <app-user-card
+  *ngFor="let user of users$ | async"
+  [user]="user"
+></app-user-card>
+</div>
